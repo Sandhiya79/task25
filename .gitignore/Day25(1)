@@ -1,0 +1,24 @@
+#convert string to datetime
+
+
+import datetime 
+
+   
+# Function to convert string to datetime 
+
+def convert(date_time): 
+
+    format = '%b %d %Y %I:%M%p' # The format 
+
+    datetime_str = datetime.datetime.strptime(date_time, format) 
+
+   
+
+    return datetime_str 
+
+   
+# Driver code 
+
+date_time = 'Jun 9 2021 12:07AM'
+
+print(convert(date_time)) 
